@@ -12,6 +12,20 @@
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 ---
+Student Information
+Name: Neol Baloyi
+
+Number: St10536956
+
+Module: Web Development
+
+Module Code: WEDE5020
+
+Submission: Portfolio of Evidence (PoE)
+
+Part: Part 2
+
+---
 
 # 📖 Project Overview
 
