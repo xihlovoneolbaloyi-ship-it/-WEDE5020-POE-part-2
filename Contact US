@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Crumbs Bakery | Contact Us</title>
+
+    <meta name="description"
+        content="Contact Sweet Crumbs Bakery in Johannesburg. Visit our branches, view business hours, send us a message, or find us on Google Maps.">
+
+    <meta name="keywords"
+        content="Sweet Crumbs Bakery, Contact, Johannesburg Bakery, Sandton Bakery, Cakes, Bakery">
+
+    <meta name="author" content="Sweet Crumbs Bakery">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <h1>Sweet Crumbs Bakery</h1>
+
+            <p>Freshly Baked Happiness Every Day</p>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="enquiry.html">Enquiry</a></li>
+
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="page-banner">
+
+            <h2>Contact Sweet Crumbs Bakery</h2>
+
+            <p>
+
+                We'd love to hear from you. Whether you have a question,
+                need a custom cake, or want catering for your event,
+                our team is ready to help.
+
+            </p>
+
+        </section>
+
+        <!-- Branches -->
+
+        <section>
+
+            <h2>Visit Our Branches</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <h3>Johannesburg CBD</h3>
+
+                    <p><strong>Address</strong></p>
+
+                    <p>
+                        125 Main Street<br>
+                        Johannesburg CBD<br>
+                        Johannesburg, 2001
+                    </p>
+
+                    <p><strong>Phone:</strong> (011) 123-4567</p>
+
+                    <p><strong>Email:</strong> cbd@sweetcrumbsbakery.co.za</p>
+
+                </article>
+
+                <article class="product-card">
+
+                    <h3>Sandton</h3>
+
+                    <p><strong>Address</strong></p>
+
+                    <p>
+                        Nelson Mandela Square<br>
+                        Sandton City<br>
+                        Johannesburg, 2196
+                    </p>
+
+                    <p><strong>Phone:</strong> (011) 987-6543</p>
+
+                    <p><strong>Email:</strong> sandton@sweetcrumbsbakery.co.za</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Hours -->
+
+        <section>
+
+            <h2>Business Hours</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Day</th>
+
+                        <th>Opening Hours</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Monday to Friday</td>
+
+                        <td>08:00 - 18:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Saturday</td>
+
+                        <td>08:00 - 16:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Sunday</td>
+
+                        <td>09:00 - 14:00</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Contact Form -->
+
+        <section>
+
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required>
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Optional"
+                    autocomplete="tel">
+
+                <label for="subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Message subject">
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Type your message..."
+                    required></textarea>
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+                <button type="reset">
+
+                    Clear Form
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Maps -->
+
+        <section>
+
+            <h2>Find Us</h2>
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Johannesburg+CBD&output=embed"
+                    title="Johannesburg CBD Branch Location"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <br>
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Sandton+City&output=embed"
+                    title="Sandton Branch Location"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Sweet Crumbs Bakery</h3>
+
+        <p>Johannesburg CBD | Sandton</p>
+
+        <p>Phone: (011) 123-4567</p>
+
+        <p>Email: info@sweetcrumbsbakery.co.za</p>
+
+        <p>Facebook | Instagram | WhatsApp</p>
+
+        <p>&copy; 2026 Sweet Crumbs Bakery. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

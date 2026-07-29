@@ -1,0 +1,288 @@
+/* ==========================================
+   File: validation.js
+   Description: Sweet Crumbs Bakery
+   Client-side Form Validation
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("contactForm");
+
+    if (!form) return;
+
+    const fullName = document.getElementById("fullName");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const subject = document.getElementById("subject");
+    const message = document.getElementById("message");
+
+    const fields = [fullName, email, phone, subject, message];
+
+    /* ==========================
+       Live Validation
+    ========================== */
+
+    fields.forEach(field => {
+
+        field.addEventListener("input", () => {
+
+            validateField(field);
+
+            if (field === message) {
+
+                updateCharacterCounter();
+
+            }
+
+        });
+
+    });
+
+    /* ==========================
+       Form Submission
+    ========================== */
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        clearErrors();
+
+        let valid = true;
+        let firstInvalid = null;
+
+        fields.forEach(field => {
+
+            if (!validateField(field)) {
+
+                valid = false;
+
+                if (!firstInvalid) {
+
+                    firstInvalid = field;
+
+                }
+
+            }
+
+        });
+
+        if (!valid) {
+
+            firstInvalid.focus();
+
+            return;
+
+        }
+
+        alert("✅ Thank you! Your enquiry has been submitted successfully.");
+
+        form.reset();
+
+        clearErrors();
+
+        updateCharacterCounter();
+
+    });
+
+    updateCharacterCounter();
+
+});
+
+/* ==========================================
+   Validate Individual Field
+========================================== */
+
+function validateField(field) {
+
+    const value = field.value.trim();
+
+    removeError(field);
+
+    switch (field.id) {
+
+        case "fullName":
+
+            if (value.length < 3) {
+
+                showError(field, "Please enter your full name.");
+
+                return false;
+
+            }
+
+            break;
+
+        case "email":
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(value)) {
+
+                showError(field, "Enter a valid email address.");
+
+                return false;
+
+            }
+
+            break;
+
+        case "phone":
+
+            const phonePattern =
+                /^\+?[0-9\s()-]{10,15}$/;
+
+            if (!phonePattern.test(value)) {
+
+                showError(field, "Enter a valid phone number.");
+
+                return false;
+
+            }
+
+            break;
+
+        case "subject":
+
+            if (value === "") {
+
+                showError(field, "Subject is required.");
+
+                return false;
+
+            }
+
+            break;
+
+        case "message":
+
+            if (value.length < 20) {
+
+                showError(field,
+                    "Message must contain at least 20 characters.");
+
+                return false;
+
+            }
+
+            break;
+
+    }
+
+    showSuccess(field);
+
+    return true;
+
+}
+
+/* ==========================================
+   Show Error
+========================================== */
+
+function showError(field, message) {
+
+    field.style.border = "2px solid #d62828";
+
+    field.setAttribute("aria-invalid", "true");
+
+    const error = document.createElement("small");
+
+    error.className = "error-message";
+
+    error.textContent = message;
+
+    error.style.color = "#d62828";
+
+    error.style.display = "block";
+
+    error.style.marginTop = "5px";
+
+    field.parentElement.appendChild(error);
+
+}
+
+/* ==========================================
+   Show Success
+========================================== */
+
+function showSuccess(field) {
+
+    field.style.border = "2px solid #2a9d8f";
+
+    field.setAttribute("aria-invalid", "false");
+
+}
+
+/* ==========================================
+   Remove Existing Error
+========================================== */
+
+function removeError(field) {
+
+    field.style.border = "";
+
+    const error =
+        field.parentElement.querySelector(".error-message");
+
+    if (error) {
+
+        error.remove();
+
+    }
+
+}
+
+/* ==========================================
+   Clear All Errors
+========================================== */
+
+function clearErrors() {
+
+    document.querySelectorAll(".error-message")
+        .forEach(error => error.remove());
+
+    document.querySelectorAll("input, textarea")
+        .forEach(field => {
+
+            field.style.border = "";
+
+            field.removeAttribute("aria-invalid");
+
+        });
+
+}
+
+/* ==========================================
+   Character Counter
+========================================== */
+
+function updateCharacterCounter() {
+
+    const message = document.getElementById("message");
+
+    if (!message) return;
+
+    let counter =
+        document.getElementById("messageCounter");
+
+    if (!counter) {
+
+        counter = document.createElement("small");
+
+        counter.id = "messageCounter";
+
+        counter.style.display = "block";
+
+        counter.style.marginTop = "5px";
+
+        counter.style.color = "#666";
+
+        message.parentElement.appendChild(counter);
+
+    }
+
+    counter.textContent =
+        `${message.value.length} / 500 characters`;
+
+}

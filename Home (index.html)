@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Crumbs Bakery | Home</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Welcome to Sweet Crumbs Bakery in Johannesburg. Enjoy freshly baked cakes, pastries, artisan bread, cupcakes, desserts, and custom cakes for every occasion.">
+
+    <meta name="keywords"
+        content="Sweet Crumbs Bakery, Bakery Johannesburg, Cakes, Bread, Cupcakes, Pastries, Desserts">
+
+    <meta name="author" content="Sweet Crumbs Bakery">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <h1>Sweet Crumbs Bakery</h1>
+
+            <p>Freshly Baked Happiness Every Day</p>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html"
+                        class="active"
+                        aria-current="page">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="enquiry.html">Enquiry</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Freshly Baked With Love</h2>
+
+            <p>
+
+                Experience handcrafted cakes, artisan bread,
+                pastries, cupcakes and desserts made daily
+                using the finest ingredients.
+
+            </p>
+
+            <a href="products.html" class="btn">
+
+                View Our Products
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Welcome -->
+
+        <section>
+
+            <h2>Welcome to Sweet Crumbs Bakery</h2>
+
+            <p>
+
+                Sweet Crumbs Bakery is a proudly family-owned bakery
+                located in Johannesburg.
+
+                Since 2018 we have delighted customers with
+                freshly baked breads, elegant cakes,
+                delicious pastries and handcrafted desserts.
+
+            </p>
+
+            <p>
+
+                Whether you're celebrating a birthday,
+                wedding, baby shower or simply craving
+                something sweet, our talented bakers are
+                ready to make every occasion unforgettable.
+
+            </p>
+
+        </section>
+
+        <!-- Featured Products -->
+
+        <section>
+
+            <h2>Featured Products</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <img
+                        src="images/cakes/chocolate-cake.jpg"
+                        alt="Chocolate celebration cake"
+                        loading="lazy">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+
+                        Rich chocolate sponge layered with
+                        silky chocolate buttercream.
+
+                    </p>
+
+                    <h4>R320</h4>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img
+                        src="images/cupcakes/cupcakes.jpg"
+                        alt="Vanilla cupcakes"
+                        loading="lazy">
+
+                    <h3>Vanilla Cupcakes</h3>
+
+                    <p>
+
+                        Soft vanilla cupcakes finished
+                        with creamy buttercream icing.
+
+                    </p>
+
+                    <h4>R180 / Dozen</h4>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img
+                        src="images/bread/artisan-bread.jpg"
+                        alt="Fresh artisan bread"
+                        loading="lazy">
+
+                    <h3>Artisan Bread</h3>
+
+                    <p>
+
+                        Freshly baked every morning
+                        using premium ingredients.
+
+                    </p>
+
+                    <h4>R45</h4>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Services -->
+
+        <section>
+
+            <h2>Why Choose Sweet Crumbs Bakery?</h2>
+
+            <div class="features">
+
+                <div class="feature-box">
+
+                    <h3>Fresh Daily</h3>
+
+                    <p>Every product is baked fresh each morning.</p>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <h3>Custom Cakes</h3>
+
+                    <p>Designed for birthdays, weddings and celebrations.</p>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <h3>Affordable</h3>
+
+                    <p>Excellent quality at competitive prices.</p>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <h3>Friendly Service</h3>
+
+                    <p>Professional staff ready to help.</p>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <h3>Online Orders</h3>
+
+                    <p>Easy enquiries and convenient ordering.</p>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <h3>Local Delivery</h3>
+
+                    <p>Reliable delivery throughout Johannesburg.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Testimonials -->
+
+        <section>
+
+            <h2>Customer Testimonials</h2>
+
+            <blockquote>
+
+                "The birthday cake was absolutely amazing.
+                Everyone loved it!"
+
+                <footer>
+
+                    <strong>Sarah M.</strong>
+
+                </footer>
+
+            </blockquote>
+
+            <blockquote>
+
+                "The best cupcakes in Johannesburg.
+                Fresh, delicious and beautifully decorated."
+
+                <footer>
+
+                    <strong>James T.</strong>
+
+                </footer>
+
+            </blockquote>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <h2>Ready to Order?</h2>
+
+            <p>
+
+                Browse our delicious products or contact
+                our bakery to place your custom order today.
+
+            </p>
+
+            <a href="enquiry.html" class="btn">
+
+                Order Now
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Sweet Crumbs Bakery</h3>
+
+        <p>Johannesburg CBD | Sandton</p>
+
+        <p>Phone: (011) 123-4567</p>
+
+        <p>Email: info@sweetcrumbsbakery.co.za</p>
+
+        <p>Facebook | Instagram | WhatsApp</p>
+
+        <p>&copy; 2026 Sweet Crumbs Bakery. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

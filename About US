@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Crumbs Bakery | About Us</title>
+
+    <meta name="description"
+        content="Learn about Sweet Crumbs Bakery, our history, mission, vision, experienced team, and commitment to providing freshly baked quality products in Johannesburg.">
+
+    <meta name="keywords"
+        content="Bakery, Sweet Crumbs Bakery, Johannesburg Bakery, Cakes, Bread, Pastries, Custom Cakes">
+
+    <meta name="author" content="Sweet Crumbs Bakery">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <h1>Sweet Crumbs Bakery</h1>
+
+            <p>Freshly Baked Happiness Every Day</p>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html" class="active"
+                        aria-current="page">About Us</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="enquiry.html">Enquiry</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="page-banner">
+
+            <h2>About Sweet Crumbs Bakery</h2>
+
+            <p>
+                Baking fresh memories and delicious moments since 2018.
+            </p>
+
+        </section>
+
+        <!-- About -->
+
+        <section class="about-section">
+
+            <img src="images/about/bakery.jpg"
+                alt="Front view of Sweet Crumbs Bakery in Johannesburg"
+                class="about-image"
+                loading="lazy">
+
+            <div class="about-text">
+
+                <h2>Who We Are</h2>
+
+                <p>
+
+                    Sweet Crumbs Bakery is a proudly family-owned bakery
+                    located in Johannesburg, South Africa.
+
+                    Established in 2018, we began as a small home bakery
+                    with one goal: creating delicious baked goods using
+                    quality ingredients and traditional baking methods.
+
+                </p>
+
+                <p>
+
+                    Today, we proudly serve families, schools,
+                    businesses and event organisers throughout
+                    Johannesburg with artisan breads, pastries,
+                    cupcakes, celebration cakes and customised desserts.
+
+                </p>
+
+                <p>
+
+                    Every recipe is carefully prepared using premium
+                    ingredients, ensuring freshness, flavour and
+                    beautiful presentation every single day.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Mission Vision -->
+
+        <section class="info-grid">
+
+            <article class="info-card">
+
+                <h2>Our Mission</h2>
+
+                <p>
+
+                    To provide freshly baked, premium-quality products
+                    while delivering outstanding customer service,
+                    affordable prices and memorable experiences.
+
+                </p>
+
+            </article>
+
+            <article class="info-card">
+
+                <h2>Our Vision</h2>
+
+                <p>
+
+                    To become Johannesburg's favourite bakery through
+                    exceptional quality, innovation and trusted
+                    customer relationships.
+
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Values -->
+
+        <section>
+
+            <h2>Our Core Values</h2>
+
+            <ul class="values-list">
+
+                <li>✔ Premium Quality</li>
+
+                <li>✔ Fresh Ingredients Daily</li>
+
+                <li>✔ Customer Satisfaction</li>
+
+                <li>✔ Creativity & Innovation</li>
+
+                <li>✔ Integrity & Honesty</li>
+
+                <li>✔ Community Support</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Team -->
+
+        <section>
+
+            <h2>Meet Our Team</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <img src="images/team/owner.jpg"
+                        alt="Sarah Nkosi, Owner and Head Baker"
+                        loading="lazy">
+
+                    <h3>Sarah Nkosi</h3>
+
+                    <p><strong>Owner & Head Baker</strong></p>
+
+                    <p>
+
+                        Sarah founded Sweet Crumbs Bakery with a passion
+                        for handcrafted baking and creating unforgettable
+                        cakes for every celebration.
+
+                    </p>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img src="images/team/baker.jpg"
+                        alt="Michael Dlamini, Pastry Chef"
+                        loading="lazy">
+
+                    <h3>Michael Dlamini</h3>
+
+                    <p><strong>Pastry Chef</strong></p>
+
+                    <p>
+
+                        Michael specialises in artisan breads,
+                        croissants, pastries and handcrafted desserts.
+
+                    </p>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img src="images/team/customer-service.jpg"
+                        alt="Lerato Mokoena, Customer Relations"
+                        loading="lazy">
+
+                    <h3>Lerato Mokoena</h3>
+
+                    <p><strong>Customer Relations</strong></p>
+
+                    <p>
+
+                        Lerato ensures every customer enjoys friendly
+                        service and receives expert assistance with
+                        custom orders.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Why Choose Us -->
+
+        <section>
+
+            <h2>Why Customers Choose Us</h2>
+
+            <div class="features">
+
+                <div class="feature-box">
+                    <h3>Fresh Daily</h3>
+                    <p>Freshly baked every morning.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Custom Cakes</h3>
+                    <p>Beautiful cakes for every celebration.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Affordable</h3>
+                    <p>Excellent value without compromising quality.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Experienced Team</h3>
+                    <p>Friendly professionals ready to help.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Premium Ingredients</h3>
+                    <p>Only carefully selected ingredients are used.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Online Enquiries</h3>
+                    <p>Fast and convenient customer support.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Sweet Crumbs Bakery</h3>
+
+        <p>Johannesburg CBD | Sandton</p>
+
+        <p>Phone: (011) 123-4567</p>
+
+        <p>Email: info@sweetcrumbsbakery.co.za</p>
+
+        <p>
+            Facebook |
+            Instagram |
+            WhatsApp
+        </p>
+
+        <p>&copy; 2026 Sweet Crumbs Bakery. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

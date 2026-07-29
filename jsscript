@@ -1,0 +1,352 @@
+/*=====================================================
+  Sweet Crumbs Bakery
+  script.js
+  Modern JavaScript
+======================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("Sweet Crumbs Bakery Loaded");
+
+    initNavigation();
+    smoothScrolling();
+    revealElements();
+    highlightCurrentPage();
+    backToTop();
+    updateFooterYear();
+    lazyLoadImages();
+    initForm();
+    pageLoader();
+
+});
+
+/*=====================================================
+  MOBILE NAVIGATION
+======================================================*/
+
+function initNavigation() {
+
+    const header = document.querySelector("header");
+    const nav = document.querySelector("nav");
+
+    if (!header || !nav) return;
+
+    const button = document.createElement("button");
+
+    button.className = "nav-toggle";
+
+    button.textContent = "☰ Menu";
+
+    button.setAttribute("aria-label", "Toggle Navigation");
+
+    button.setAttribute("aria-expanded", "false");
+
+    header.insertBefore(button, nav);
+
+    button.addEventListener("click", () => {
+
+        nav.classList.toggle("active");
+
+        const expanded =
+            nav.classList.contains("active");
+
+        button.setAttribute(
+            "aria-expanded",
+            expanded
+        );
+
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            nav.classList.remove("active");
+
+            button.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+
+}
+
+/*=====================================================
+  FORM
+======================================================*/
+
+function initForm() {
+
+    const form = document.getElementById("enquiryForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", validateForm);
+
+}
+
+function validateForm(event) {
+
+    event.preventDefault();
+
+    const form = event.target;
+
+    const name = form.querySelector("#name");
+    const email = form.querySelector("#email");
+    const product = form.querySelector("#product");
+    const message = form.querySelector("#message");
+
+    const errors = [];
+
+    if (name && name.value.trim().length < 3) {
+
+        errors.push("Please enter your full name.");
+
+    }
+
+    const emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email && !emailPattern.test(email.value.trim())) {
+
+        errors.push("Enter a valid email address.");
+
+    }
+
+    if (product && product.value === "") {
+
+        errors.push("Please select a product.");
+
+    }
+
+    if (message && message.value.trim().length < 10) {
+
+        errors.push("Message must contain at least 10 characters.");
+
+    }
+
+    if (errors.length) {
+
+        alert(errors.join("\n"));
+
+        return;
+
+    }
+
+    alert("Thank you! Your enquiry has been submitted successfully.");
+
+    form.reset();
+
+}
+
+/*=====================================================
+  SMOOTH SCROLL
+======================================================*/
+
+function smoothScrolling() {
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+        link.addEventListener("click", e => {
+
+            const target =
+                document.querySelector(
+                    link.getAttribute("href")
+                );
+
+            if (!target) return;
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+    });
+
+}
+
+/*=====================================================
+  SCROLL REVEAL
+======================================================*/
+
+function revealElements() {
+
+    const items =
+        document.querySelectorAll(
+            "section, .product-card, .gallery img"
+        );
+
+    const observer =
+        new IntersectionObserver(entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.15
+
+        });
+
+    items.forEach(item => {
+
+        item.classList.add("hidden");
+
+        observer.observe(item);
+
+    });
+
+}
+
+/*=====================================================
+  ACTIVE PAGE
+======================================================*/
+
+function highlightCurrentPage() {
+
+    const page =
+        window.location.pathname.split("/").pop() ||
+        "index.html";
+
+    document.querySelectorAll("nav a").forEach(link => {
+
+        if (link.getAttribute("href") === page) {
+
+            link.classList.add("active");
+
+            link.setAttribute(
+                "aria-current",
+                "page"
+            );
+
+        }
+
+    });
+
+}
+
+/*=====================================================
+  IMAGE HOVER
+======================================================*/
+
+document.querySelectorAll(".gallery img").forEach(image => {
+
+    image.addEventListener("mouseenter", () => {
+
+        image.classList.add("zoom");
+
+    });
+
+    image.addEventListener("mouseleave", () => {
+
+        image.classList.remove("zoom");
+
+    });
+
+});
+
+/*=====================================================
+  BACK TO TOP
+======================================================*/
+
+function backToTop() {
+
+    const button =
+        document.createElement("button");
+
+    button.id = "topButton";
+
+    button.innerHTML = "↑";
+
+    button.title = "Back to Top";
+
+    document.body.appendChild(button);
+
+    window.addEventListener("scroll", () => {
+
+        button.classList.toggle(
+
+            "show-top",
+
+            window.scrollY > 300
+
+        );
+
+    });
+
+    button.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
+
+/*=====================================================
+  FOOTER YEAR
+======================================================*/
+
+function updateFooterYear() {
+
+    const year =
+        document.getElementById("year");
+
+    if (year) {
+
+        year.textContent =
+            new Date().getFullYear();
+
+    }
+
+}
+
+/*=====================================================
+  IMAGE LAZY LOADING
+======================================================*/
+
+function lazyLoadImages() {
+
+    document.querySelectorAll("img").forEach(img => {
+
+        img.loading = "lazy";
+
+    });
+
+}
+
+/*=====================================================
+  PAGE LOADER
+======================================================*/
+
+function pageLoader() {
+
+    document.body.classList.add("loaded");
+
+}
+
+/*=====================================================
+  END
+======================================================*/
