@@ -52,8 +52,8 @@ The website has been designed with usability, accessibility, responsiveness, and
 
 | Item | Information |
 |------|-------------|
-| Student Name | Neol Baloyi |
-| Student Number | ST10536956 |
+| Student Name | neol x Baloyi |
+| Student Number | sT10536956 |
 | Module | Web Development |
 | Module Code | WEDE5020 |
 | Assessment | Portfolio of Evidence |
