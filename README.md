@@ -15,7 +15,7 @@
 Student Information
 Name: Neol Baloyi
 
-Number: St10536956
+Number: sT10536956
 
 Module: Web Development
 
@@ -475,7 +475,7 @@ Future improvements may include:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/WEDE5020-POE.git
+git clone https://github.com/xihlovoneolbaloyi-ship-it/WEDE5020-POE.git
 ```
 
 Navigate into the project:
